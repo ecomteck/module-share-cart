@@ -1,0 +1,26 @@
+{
+  "name": "ecomteck/module-share-cart",
+  "description": "Magento 2 Share Cart extension",
+  "type": "magento2-module",
+  "require": {
+    "ecomteck/module-core" : "1.*",
+    "mpdf/mpdf": "^7.1.0"
+  },
+  "version": "1.0.0",
+  "license": "proprietary",
+  "authors": [
+    {
+        "name": "Ecomteck",
+        "email": "ecomteck@gmail.com",
+        "role": "Magento 2 Extension Solutions"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ecomteck\\ShareCart\\": ""
+    }
+  }
+}

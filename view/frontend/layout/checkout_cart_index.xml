@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ecomteck
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Ecomteck.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.ecomteck.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ecomteck
+ * @package     Ecomteck_ShareCart
+ * @copyright   Copyright (c) Ecomteck (https://www.ecomteck.com/)
+ * @license     https://www.ecomteck.com/LICENSE.txt
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Ecomteck\ShareCart\Block\Cart\Button" name="mp.sharecart" template="Ecomteck_ShareCart::cart/button.phtml" after="checkout.cart.order.actions"/>
+        </referenceContainer>
+    </body>
+</page>
