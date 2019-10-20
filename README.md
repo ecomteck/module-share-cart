@@ -24,6 +24,22 @@ Run the following command in Magento 2 root folder:
 
 ```
 composer require ecomteck/module-share-cart
+php bin/magento module:enable Ecomteck_ShareCart
+php bin/magento setup:upgrade
+php bin/magento setup:static-content:deploy -f
+```
+
+- Install via FTP
+Download module files:
+Ecomteck_Core: https://github.com/ecomteck/module-core/releases
+Ecomteck_ShareCart: https://github.com/ecomteck/module-share-cart/releases
+Mpdf lib: https://packagist.org/packages/mpdf/mpdf
+
+Upload Ecomteck_core, Ecomteck_ShareCart to webroot of your site
+Upload Mpdf lib zip file to lib/internal folder and decompress it.
+Run commands:
+
+```
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 ```
